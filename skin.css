@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --min_width: 350px;
+    --nav_bg_white: #131313fd;
+    --nav-txt-color: rgb(82, 82, 82);
+    --nav-txt-color-hover: rgb(53, 53, 53);
+    --card-color:rgb(17, 17, 17);
+    --card-shadow: rgba(0, 0, 0, 0.507) 0px 10px 20px, rgba(0, 0, 0, 0.438) 0px 6px 6px;
+    --content-bottom-bg: rgba(0, 0, 0, 0.178);
+    --main-shadow: 3px 3px 10px #0000008c inset;
+}
+
+body{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--nav-txt-color);
+}
+.txt-p12:hover{
+    color: var(--nav-txt-color-hover);
+    transition: 300ms;
+}
+
+.box{
+    background-color: var(--nav_bg_white);
+    display: grid;
+    grid-template-columns: 45px auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box0{
+    background-color: var(--nav_bg_white);
+    display: grid;
+    grid-template-rows: 60px 500px auto;
+}
+
+.box1{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 8px auto;
+    background-color: var(--nav_bg_white);
+    overflow: hidden;
+    min-width: var(--min_width);
+}
+
+
+.box00{
+    display: grid;
+    padding: 15px;
+}
+.nav-txt{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.page{
+    box-shadow: var(--main-shadow);
+}
+
+.bottom-nav{
+    display: grid;
+    place-content: center;
+    border-radius: 15px 15px 0px 0px;
+    height: 98.9vh;
+    width: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 97.1vw 97.1vw 97.1vw;
+    border-radius: 15px 15px 0px 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.firstpage{
+    background-color: var(--nav_bg_white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content{
+    height: 90vh;
+    width: 70vw;
+    text-align: center;
+    padding-top: 125px;
+}
+
+.abstract{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hello{
+	display: inline;
+	position: relative;
+	font: 100px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(255, 145, 0, 0.5); 
+}
+
+.hello:after {
+	content: "Hello";
+	position: absolute; left: 6px; top: 2px;
+	color: rgba(255, 145, 0, 0.5);   
+}
+
+.intro{
+    font-size: 50px;
+    color: rgba(131, 133, 250, 0.74);
+}
+
+.I{
+    font-size: 50px;
+    color: rgba(255, 208, 0, 0.836) ;
+}
+
+.name{
+    color: rgba(255, 174, 136, 0.74);
+    font-size: 70px;
+}
+
+.name:hover{
+    color: rgb(255, 174, 136);
+    transition: 100ms;
+}
+
+.profession{
+    color: rgba(255, 184, 226, 0.7);
+    font-size: 55px;
+}
+
+.profession:hover{
+    color: rgb(255, 184, 225);
+}
+
+.specific{
+    color: rgba(255, 144, 168, 0.747);
+}
+
+.specific:hover{
+    color: rgb(255, 144, 168);
+}
+
+.secondpage{
+    background-color: var(--nav_bg_white);
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+.second{
+    height: 600px;
+    width: 470px;
+    display: grid;
+    grid-template-rows: auto 70px;
+}
+
+.portfolio-firstpage, .portfolio-secondpage, .portfolio-thirdpage{
+    display: grid;
+    grid-template-rows: 430px 100px; 
+    grid-template-columns: 100px 370px;
+}
+
+.portfolio-firstpage img{
+    height: auto;
+    width: 400px;
+}
+
+.portfolio-secondpage img{
+    height: 330px;
+    width: 200px;
+}
+
+.portfolio-thirdpage img{
+
+    height: 400px;
+
+}
+
+.pf-fp1, .pf-sp1, .pf-tp1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pf-sp2{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#pf-fp1-txt, #pf-sp1-txt, #pf-tp1-txt{
+    color: rgba(195, 201, 200, 0.822);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    cursor: pointer;
+    padding-right: 70px;
+}
+
+.pf-fp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pf-tp2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.pf-fp3, .pf-sp3, .pf-tp3{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 120px;
+    padding-top: 20px;
+
+}
+
+.pf-fp3 a, .pf-sp3 a, .pf-tp3 a{
+    text-decoration: none;
+    color: rgba(255, 210, 151, 0.822);
+}
+
+.pf-fp3 a:hover,.pf-sp3 a:hover, .pf-tp3 a:hover{
+    color: rgb(255, 179, 79);
+}
+
+.pf-fp3, .pf-sp3, .pf-tp3{
+    grid-column: 1/3;
+}
+
+.second-top{
+    display: grid;
+    grid-template-columns: repeat(4, 470px);
+    overflow-x: hidden;
+    box-shadow: var(--card-shadow);
+    background-color: var(--card-color);
+    border-radius: 7px 7px;
+    scroll-behavior: smooth;
+}
+
+.second-bot{
+    display: grid;
+    grid-template-columns: 235px 235px;
+}
+
+.arrow{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.arrow #leftanchor img{
+    transform: rotate(180deg);
+}
+
+.p2213{
+    background-color: var(--nav_bg_white);
+}
+
+.b{
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+    height: 100vh;
+    width: 100%;
+}
+
+.b1{
+    display: grid;
+    text-align: center;
+    padding-top: 80px;
+    color: rgba(0, 0, 0, 0.178);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10vw;
+    font-weight: bold;
+    overflow: hidden;
+    text-shadow: 3px 0px #141414,
+                 0px 10px 10px rgba(0, 0, 0, 0.5),
+                 0px 2px 2px rgba(0,0,0,0.5),
+                 0px 10px 30px rgba(0,0,0,0.5);
+}
+
+.b2{
+    background-color: var(--content-bottom-bg);
+    display: grid;
+    place-items: center;
+}
+
+.b21{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    place-items: center;
+}
+
+.icon{
+    height: 100px;
+    width: 100px;
+}
+
+.b212{
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .b1{
+        padding-top: 90px;
+        overflow: hidden;
+    }
+    .home-content{
+        padding-top: 20px;
+    }
+}
